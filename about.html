@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,98 +78,108 @@
 
         <h2 class="page-heading">Where we are?</h2>
 
-        <div class="col-md-4">
+        <div class="fc">
 
-            <div class="contactdetails">
-                <p class="mb-0"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="address-sec"> </span>
-                    232/2, Near Maruti-Suzuki Showroom, Khandoba Mal, Pune - Nashik Road, Opp. Bafana Jewellers,
-                    Bhosari, Pune, MH - 411 039.</p>
-                <p><i class="fa fa-phone" aria-hidden="true"></i> +91 9373 79 8685, +91 8446 90 0019</p>
-                <!-- <p class="mb-0"><a href="mailto:jayant@jdcuttingtools.com"><i class="fa fa-envelope" aria-hidden="true"></i> jayant@jdcuttingtools.com </a></p> -->
-                <p><a href="mailto:jayant@jdcuttingtools.com"><i class="fa fa-envelope" aria-hidden="true"></i>
-                        jayant@jdcuttingtools.com</a> </p>
 
-                <p><a href="https://www.jdcuttingtools.com/"><i class="fa fa-globe" aria-hidden="true"></i>
-                        www.jdcuttingtools.com</a> </p>
+            <div class="col-md-6 text-center" style="border: 2px solid #ccc;padding: 20px;">
 
-                <p><a href="https://goo.gl/maps/W3tSPwQWfvr1JPe56" class="location" target="_blank"> Follow us on :
-                        Google Map</a></p>
+                <p>Please fill out the quick form and we will be in touch with lightening speed.</p>
+                <h6 class="text-center">For more information please fill the form</h6>
+
+                <form id="form1" name="myform" enctype="multipart/form-data" autocomplete="off" method="post"
+                    action="emailsend.php">
+                    <div id="pasteoff">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="name" type="text" required placeholder="Enter Your Name" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="cname" type="text" required placeholder="Enter Company Name" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="phone" type="number" id="txtmobile mob_frm"
+                                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                    maxlength="15" required placeholder="Enter Phone Number" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="email" type="email" id="txtemail" required placeholder="Enter Email" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="pname" type="text" required placeholder="Enter Product Name" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <input name="city" type="text" required placeholder="Enter City Name" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <input type="checkbox" name="contact_me_by_fax_only" value="1"
+                                style="display:none !important" tabindex="-1" autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-6 col-xs-12">
+                            <input name="msg" type="text" required placeholder="Drop Your Message Here">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <h5 class="textheading">Upload File</h5>
+                        </div>
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <input type="file" name="file" id="file">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <input class="submit overlay" type="submit" name="submit" id="submit" class="button"
+                                value="Submit" />
+                            <div class="submit__overlay"></div>
+                        </div>
+                    </div>
+                </form>
+
+
+
             </div>
 
+            <div>
+
+                <div class="contactdetails">
+                    <p class="mb-0"><i class="fa fa-map-marker" aria-hidden="true"></i> <span class="address-sec">
+                        </span>
+                        232/2, Near Maruti-Suzuki Showroom, Khandoba Mal, Pune - Nashik Road, Opp. Bafana Jewellers,
+                        Bhosari, Pune, MH - 411 039.</p>
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> +91 9373 79 8685, +91 8446 90 0019</p>
+                    <!-- <p class="mb-0"><a href="mailto:jayant@jdcuttingtools.com"><i class="fa fa-envelope" aria-hidden="true"></i> jayant@jdcuttingtools.com </a></p> -->
+                    <p><a href="mailto:jayant@jdcuttingtools.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            jayant@jdcuttingtools.com</a> </p>
+
+                    <p><a href="https://www.jdcuttingtools.com/"><i class="fa fa-globe" aria-hidden="true"></i>
+                            www.jdcuttingtools.com</a> </p>
+
+                    <p><a href="https://goo.gl/maps/W3tSPwQWfvr1JPe56" class="location" target="_blank"> Follow us on :
+                            Google Map</a></p>
+
+                </div>
+
+            </div>
         </div>
 
-        <div class="contactform mb-5">
-            <p>Please fill out the quick form and we will be in touch with lightening speed.</p>
-            <h6 class="text-center">For more information please fill the form</h6>
-
-            <form id="form1" name="myform" enctype="multipart/form-data" autocomplete="off" method="post"
-                action="emailsend.php">
-                <div id="pasteoff">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input name="name" type="text" required placeholder="Enter Your Name" />
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input name="cname" type="text" required placeholder="Enter Company Name" />
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input name="phone" type="number" id="txtmobile mob_frm"
-                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                                maxlength="15" required placeholder="Enter Phone Number" />
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input name="email" type="email" id="txtemail" required placeholder="Enter Email" />
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input name="pname" type="text" required placeholder="Enter Product Name" />
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                            <input name="city" type="text" required placeholder="Enter City Name" />
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row">
-                    <div class="col-md-12 col-sm-6 col-xs-12">
-                        <input type="checkbox" name="contact_me_by_fax_only" value="1" style="display:none !important"
-                            tabindex="-1" autocomplete="off">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-12 col-sm-6 col-xs-12">
-                        <input name="msg" type="text" required placeholder="Drop Your Message Here"
-                            style="height: 100px;width: 100%" />
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <h5 class="textheading">Upload File</h5>
-                    </div>
-                    <div class="col-md-9 col-sm-9 col-xs-12">
-                        <input type="file" name="file" id="file">
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <input class="submit overlay" type="submit" name="submit" id="submit" class="button"
-                            value="Submit" />
-                        <div class="submit__overlay"></div>
-                    </div>
-                </div>
-            </form>
-
-        </div>
+        <br>
 
         <footer>
             <div id="left-footer">
