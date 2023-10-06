@@ -86,14 +86,13 @@
                 <p>Please fill out the quick form and we will be in touch with lightening speed.</p>
                 <h6 class="text-center">For more information please fill the form</h6>
 
-                <form id="form1" name="myform" enctype="multipart/form-data" autocomplete="off" method="post"
-                    action="emailsend.php">
+                <form name="contactform" method="post" action="">
                     <div id="pasteoff">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <input name="name" type="text" required placeholder="Enter Your Name" />
                             </div>
-                            
+
                             <br>
                         </div>
 
@@ -109,7 +108,7 @@
                         </div>
 
                         <div class="row">
-                            
+
                             <div class="col-md-6 col-sm-6 col-xs-12">
                                 <input name="city" type="text" required placeholder="Enter City Name" />
                             </div><br>
@@ -123,17 +122,29 @@
                         </div><br>
                     </div>
 
-                    
+
                     <br>
                     <div class="row">
 
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <input class="submit overlay" type="submit" name="submit" id="submit" class="button"
                                 value="Submit" />
-                            <div class="submit__overlay"></div>
                         </div>
                     </div>
                 </form>
+
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzmdi32x_FeyrPA9rCAj68QYv61AIivFEFfycv7bgNENKFY-9iUYS9Pt1oGO4BPlKQm/exec'
+                    const form = document.forms['contactform']
+
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                            .then(response => alert("Thank you! your form is submitted successfully."))
+                            .then(() => { window.location.reload(); })
+                            .catch(error => console.error('Error!', error.message))
+                    })
+                </script>
 
 
 
@@ -176,7 +187,7 @@
 
         <br>
 
-      
+
         <footer>
             <div id="left-footer">
                 <h3>Quick Links</h3>
