@@ -540,6 +540,12 @@ footer #social-media-footer ul li:hover a .fa-github {
   .card .card-image img {
     width: 100%;
   }
+  #products .card {
+    width: 100%;
+  }
+  #products .card .card-image img {
+    width: 40%;
+  }
 }
 
 @media (min-width: 1200px) {
