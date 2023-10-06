@@ -558,3 +558,16 @@ footer h3, .vision {
   border-left: red 1px solid;
   padding-left: 5px;
 }
+
+
+.fc{
+  display: flex;
+  gap: 80px;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .fc {
+    flex-wrap: wrap;
+  }
+}
