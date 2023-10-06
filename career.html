@@ -121,13 +121,13 @@
                 </form>
 
                 <script>
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbyEwAivJgKpClYwhVrDyq7ZoUpsLEnWnJcC7BLlDuPS2srTevNFT1ufy5RjI17i44lt/exec'
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbyMABsMCw4t-w1c84wU2M7kyEM3lnSPORlyqPi0aDHGFy0Kc7hP3JCQGDug4zrL2O4U/exec'
                     const form = document.forms['careerform']
 
                     form.addEventListener('submit', e => {
                         e.preventDefault()
                         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                            .then(response => alert("Thank you! your form is submitted successfully."))
+                            .then(response => alert("Thank you! your response is submitted successfully."))
                             .then(() => { window.location.reload(); })
                             .catch(error => console.error('Error!', error.message))
                     })
