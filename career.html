@@ -85,7 +85,7 @@
             </div>
 
             <div class="col-md-6 text-center" style="border: 2px solid #ccc;padding: 20px;">
-                <form enctype="multipart/form-data" action="MailAttch.php" method="post">
+                <form name="careerform" method="post" action="">
                     <div class="row">
                         <div class="col-md-12">
                             <input name="name" type="text" placeholder="Enter your full name" required="" />
@@ -119,11 +119,24 @@
                     </div>
 
                 </form>
+
+                <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbyEwAivJgKpClYwhVrDyq7ZoUpsLEnWnJcC7BLlDuPS2srTevNFT1ufy5RjI17i44lt/exec'
+                    const form = document.forms['careerform']
+
+                    form.addEventListener('submit', e => {
+                        e.preventDefault()
+                        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                            .then(response => alert("Thank you! your form is submitted successfully."))
+                            .then(() => { window.location.reload(); })
+                            .catch(error => console.error('Error!', error.message))
+                    })
+                </script>
             </div>
 
         </div>
         <br>
-        
+
         <!-- FOOTER -->
         <footer>
             <div id="left-footer">
