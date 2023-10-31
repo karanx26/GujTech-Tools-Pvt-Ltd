@@ -85,20 +85,20 @@
             </div>
 
             <div class="col-md-6 text-center" style="border: 2px solid #ccc;padding: 20px;">
-                <form name="careerform" method="post" action="">
+                <form name="careerform" method="post" action="career.php" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-12">
-                            <input name="name" type="text" placeholder="Enter your full name" required="" />
+                            <input name="name" id="name" type="text" placeholder="Enter your full name" required="" />
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-md-6">
-                            <input name="email" type="email" placeholder="Enter Email" required="" />
+                            <input name="email" id="email" type="email" placeholder="Enter Email" required="" />
                         </div>
                         <br>
                         <div class="col-md-6">
-                            <input name="phoneno" type="tel" placeholder="Enter Phone Number" required="" />
+                            <input name="phone" id="phone" type="tel" placeholder="Enter Phone Number" required="" />
                         </div>
                     </div>
                     <br>
@@ -120,7 +120,7 @@
 
                 </form>
 
-                <script>
+                <!-- <script>
                     const scriptURL = 'https://script.google.com/macros/s/AKfycbyMABsMCw4t-w1c84wU2M7kyEM3lnSPORlyqPi0aDHGFy0Kc7hP3JCQGDug4zrL2O4U/exec'
                     const form = document.forms['careerform']
 
@@ -131,7 +131,7 @@
                             .then(() => { window.location.reload(); })
                             .catch(error => console.error('Error!', error.message))
                     })
-                </script>
+                </script> -->
             </div>
 
         </div>

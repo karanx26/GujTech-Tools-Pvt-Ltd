@@ -86,11 +86,11 @@
                 <p>Please fill out the quick form and we will be in touch with lightening speed.</p>
                 <h6 class="text-center">For more information please fill the form</h6>
 
-                <form name="contactform" method="post" action="">
+                <form name="contactform" method="post" action="contact.php">
                     <div id="pasteoff">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input name="name" type="text" required placeholder="Enter Your Name" />
+                                <input id="name" name="name" type="text" required placeholder="Enter Your Name" />
                             </div>
 
                             <br>
@@ -98,19 +98,19 @@
 
                         <div class="row">
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input name="phone" type="tel" id="txtmobile mob_frm"
+                                <input name="phone" type="tel" id="phone"
                                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                                     maxlength="15" required placeholder="Enter Phone Number" />
                             </div><br>
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input name="email" type="email" id="txtemail" required placeholder="Enter Email" />
+                                <input name="email" type="email" id="email" required placeholder="Enter Email" />
                             </div><br>
                         </div>
 
                         <div class="row">
 
                             <div class="col-md-6 col-sm-6 col-xs-12">
-                                <input name="city" type="text" required placeholder="Enter City Name" />
+                                <input name="city" type="text" id="city" required placeholder="Enter City Name" />
                             </div><br>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
 
                     <div class="row">
                         <div class="col-md-12 col-sm-6 col-xs-12">
-                            <input name="msg" type="text" required placeholder="Drop Your Message Here">
+                            <input name="msg" type="text" id="msg" required placeholder="Drop Your Message Here">
                         </div><br>
                     </div>
 
@@ -127,15 +127,35 @@
                     <div class="row">
 
                         <div class="col-md-3 col-sm-6 col-xs-12">
-                            <input class="submit overlay" type="submit" name="submit" id="submit" class="button"
+                            <input class="submit overlay" type="submit" name="submit" id="submit" class="button" onclick="my_button_click_handler"
                                 value="Submit" />
                         </div>
                     </div>
+                    <script>
+                        function my_button_click_handler()
+                        {
+                        alert('Submitted');
+                        }
+                        </script>
                 </form>
 
                 <script>
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzmdi32x_FeyrPA9rCAj68QYv61AIivFEFfycv7bgNENKFY-9iUYS9Pt1oGO4BPlKQm/exec'
-                    const form = document.forms['contactform']
+                    document.getElementById("contactform").addEventListener("submit", function(event) {
+                        // Prevent the form from submitting as a regular HTTP request.
+                        event.preventDefault();
+                    
+                        // Display a popup message here
+                        alert("Form submitted successfully!");
+                    
+                        // You can also redirect the user to a different page if needed
+                        // window.location.href = "thank_you_page.php";
+                    });
+                    </script>
+                    
+
+                <!-- <script>
+                    // const scriptURL = 'https://script.google.com/macros/s/AKfycbzmdi32x_FeyrPA9rCAj68QYv61AIivFEFfycv7bgNENKFY-9iUYS9Pt1oGO4BPlKQm/exec'
+                    // const form = document.forms['contactform']
 
                     form.addEventListener('submit', e => {
                         e.preventDefault()
@@ -144,7 +164,7 @@
                             .then(() => { window.location.reload(); })
                             .catch(error => console.error('Error!', error.message))
                     })
-                </script>
+                </script> -->
 
 
 
@@ -159,7 +179,7 @@
                     <p><i class="fa fa-phone" aria-hidden="true"></i> +91 9099090318</p>
 
                     <p><a href="mailto:gujtech.tools@google.com"><i class="fa fa-envelope" aria-hidden="true"></i>
-                            jayant@jdcuttingtools.com</a> </p>
+                            gujtech.tools@gmail.com</a> </p>
 
                     <p><a href=#><i class="fa fa-globe" aria-hidden="true"></i>
                             gujtech</a> </p>
