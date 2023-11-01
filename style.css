@@ -130,20 +130,20 @@ nav ul {
 #logo-img {
   display: flex;
   height: 100%;
-  background: #111;
+  background: white;
   padding: 0 32px;
-  align-items: center;
+  align-items: left;
   color: white;
   transition: 0.4s;
 }
 
 #logo-img img {
-  height: 100px;
+  height: 100%;
 }
 
-#logo-img:hover {
+/* #logo-img:hover {
   background: black;
-}
+} */
 
 #menu-icon {
   height: 100%;
@@ -180,6 +180,10 @@ nav ul {
   text-align: center;
   opacity:0;
   pointer-events:none;
+}
+
+#logo-img img {
+  object-fit: contain;
 }
 
 #slideout-menu ul {
@@ -566,8 +570,26 @@ footer h3, .vision {
   flex-wrap: nowrap;
 }
 
+
 @media screen and (max-width: 600px) {
   .fc {
     flex-wrap: wrap;
   }
+}
+
+.fc1{
+  display: flex;
+  gap: 80px;
+  padding-left: 8%;
+  align-content: center;
+
+  flex-wrap: wrap;
+}
+
+#hiring img{
+  width: 350px;height: 300px ;object-fit: contain;
+}
+
+.contactdetails{
+  padding-left: 5%;
 }
