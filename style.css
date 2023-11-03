@@ -538,8 +538,11 @@ footer #social-media-footer ul li:hover a .fa-github {
   main {
     width: 95%;
   }
-  .card {
+  #card1 .card {
     width: 30%;
+  }
+  #card2 .card {
+    width: 45%;
   }
   .card .card-image img {
     width: 100%;
