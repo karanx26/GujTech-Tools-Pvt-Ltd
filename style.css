@@ -54,7 +54,7 @@ textarea:focus {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.2) url("img2/1.jpg");
+  background: rgba(0, 0, 0, 0.2) url("img/back.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -71,7 +71,7 @@ textarea:focus {
 
 /* Search Box */
 
-#searchbox {
+/* #searchbox {
   position: fixed;
   right: 0;
   top: 24px;
@@ -84,7 +84,7 @@ textarea:focus {
 #searchbox input {
   height: 48px;
   width: 100%;
-}
+} */
 
 /* Navigation */
 
@@ -156,7 +156,7 @@ nav ul {
 
 /* Search Icon */
 
-#search-icon {
+/* #search-icon {
   color: white;
   padding: 0 32px;
   cursor: pointer;
@@ -165,7 +165,7 @@ nav ul {
 
 #search-icon:hover {
   color: red;
-}
+} */
 
 /* Slideout Menu */
 
@@ -178,8 +178,8 @@ nav ul {
   margin-top: 72px;
   width: 100%;
   text-align: center;
-  opacity:0;
-  pointer-events:none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 #logo-img img {
@@ -258,15 +258,15 @@ section {
   padding: 0 8px;
 }
 
-.card-meta-blogpost{
-  color:#333;
-  font-size:14px;
+.card-meta-blogpost {
+  color: #333;
+  font-size: 14px;
   padding: 16px;
-  font-family:'Roboto Slab', serif;
+  font-family: 'Roboto Slab', serif;
 }
 
-.card-meta-blogpost a{
-  color:#333;
+.card-meta-blogpost a {
+  color: #333;
 }
 
 
@@ -320,7 +320,7 @@ footer #left-footer ul {
 footer #right-footer {
   flex: 1;
   padding-left: 32px;
-  
+
 }
 
 footer #right-footer a .fa-linkedin {
@@ -356,89 +356,89 @@ footer #social-media-footer ul li:hover a .fa-github {
 
 /* Blog List page */
 
-.page-heading{
-  font-size:32px;
-  font-family:'Roboto Condensed', sans-serif;
-  border-left:3px solid black;
-  border-right:3px solid black;
+.page-heading {
+  font-size: 32px;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
   transition: all 0.4s;
-  display:inline-block;
-  padding:4px 32px;
+  display: inline-block;
+  padding: 4px 32px;
   margin-top: 120px;
 }
 
-.page-heading:hover{
-  padding:4px 48px;
-  background:red;
+.page-heading:hover {
+  padding: 4px 48px;
+  background: red;
 }
 
-.card-meta{
-  color:#333;
+.card-meta {
+  color: #333;
   font-size: 14px;
-  padding-left:8px;
-  font-family:'Roboto Slab', serif;
+  padding-left: 8px;
+  font-family: 'Roboto Slab', serif;
 }
 
-.card-meta a{
-  color:#333;
+.card-meta a {
+  color: #333;
 }
 
 /* Pagination */
 
-.pagination{
-  padding:8px;
-  text-align:center;
-  font-weight:bold;
+.pagination {
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
 }
 
-.pagination a{
+.pagination a {
   border-top: 3px solid white;
   display: inline-block;
-  padding:8px 16px;
-  transition:0.4s;
+  padding: 8px 16px;
+  transition: 0.4s;
 }
 
-.pagination a:hover{
+.pagination a:hover {
   text-decoration: none;
-  border-top:3px solid black;
+  border-top: 3px solid black;
 }
 
 /* Single Blogpost */
 
-#post-container{
+#post-container {
   display: flex;
 }
 
-#blogpost{
+#blogpost {
   display: flex;
-  flex-direction:column;
-  width:70%;
-  border-left:1px solid #999;
+  flex-direction: column;
+  width: 70%;
+  border-left: 1px solid #999;
 }
 
-#blogpost .card{
-  width:100%;
+#blogpost .card {
+  width: 100%;
 }
 
-#blogpost .card-image:hover{
+#blogpost .card-image:hover {
   box-shadow: none;
 }
 
 /* Sidebar */
 
-#sidebar{
-  background:#333;
-  flex:1;
+#sidebar {
+  background: #333;
+  flex: 1;
   padding: 8px 16px;
-  color:white;
-  box-shadow: inset 27px 0 51px -18px rgba(0,0,0,0.75);
+  color: white;
+  box-shadow: inset 27px 0 51px -18px rgba(0, 0, 0, 0.75);
 }
 
 /* Comments section */
 
-#comments-section{
+#comments-section {
   border-top: 2px solid #eee;
-  padding:8px;
+  padding: 8px;
 }
 
 
@@ -461,12 +461,12 @@ footer #social-media-footer ul li:hover a .fa-github {
     display: none;
   }
 
-  #blogpost{
-    width:100%;
-    border-left:0;
+  #blogpost {
+    width: 100%;
+    border-left: 0;
   }
 
-  #sidebar{
+  #sidebar {
     display: none;
   }
 }
@@ -507,8 +507,7 @@ footer #social-media-footer ul li:hover a .fa-github {
     color: black;
   }
 
-  footer #social-media-footer a .fa-facebook
-  {
+  footer #social-media-footer a .fa-facebook {
     color: black;
     transition: 0.4s;
   }
@@ -540,18 +539,23 @@ footer #social-media-footer ul li:hover a .fa-github {
   main {
     width: 95%;
   }
+
   #card1 .card {
     width: 30%;
   }
+
   #card2 .card {
     width: 45%;
   }
+
   .card .card-image img {
     width: 100%;
   }
+
   #products .card {
     width: 100%;
   }
+
   #products .card .card-image img {
     width: 40%;
   }
@@ -563,13 +567,14 @@ footer #social-media-footer ul li:hover a .fa-github {
   }
 }
 
-footer h3, .vision {
+footer h3,
+.vision {
   border-left: red 1px solid;
   padding-left: 5px;
 }
 
 
-.fc{
+.fc {
   display: flex;
   gap: 80px;
   flex-wrap: nowrap;
@@ -582,7 +587,7 @@ footer h3, .vision {
   }
 }
 
-.fc1{
+.fc1 {
   display: flex;
   gap: 80px;
   padding-left: 8%;
@@ -591,10 +596,12 @@ footer h3, .vision {
   flex-wrap: wrap;
 }
 
-#hiring img{
-  width: 350px;height: 300px ;object-fit: contain;
+#hiring img {
+  width: 350px;
+  height: 300px;
+  object-fit: contain;
 }
 
-.contactdetails{
+.contactdetails {
   padding-left: 5%;
 }
